@@ -1,0 +1,63 @@
+{
+    "$ref": "#/definitions/Beneficiary",
+    "definitions": {
+        "Beneficiary": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "email": {
+                    "type": "string",
+					"format": "email"
+                },
+                "fullName": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "experienceLevel": {
+                    "type": "string"
+                },
+                "haveLaptop": {
+                    "type": "string"
+                },
+                "careerPath": {
+                    "type": "string"
+                },
+                "phoneNumber": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "whyDoYouWantToParticipate": {
+                    "type": "string"
+                },
+                "howDidYouLearnAboutUs": {
+                    "type": "string"
+                },
+                "receiveNewsletters": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "careerPath",
+                "country",
+                "email",
+                "experienceLevel",
+                "fullName",
+                "gender",
+                "haveLaptop",
+                "howDidYouLearnAboutUs",
+                "phoneNumber",
+                "receiveNewsletters",
+                "state",
+                "whyDoYouWantToParticipate"
+            ],
+            "title": "Beneficiary"
+        }
+    }
+}
